@@ -32,6 +32,8 @@
 // 去掉字符中间的连续多个空格, 只保留一个.
 - (NSString *)stringByTrimmingWhitespace;
 
+- (NSString *)escapeHtml;
+
 - (BOOL)containsString:(NSString *)string;
 
 - (NSString *)padLeft:(NSString *)ch length:(NSInteger)length;

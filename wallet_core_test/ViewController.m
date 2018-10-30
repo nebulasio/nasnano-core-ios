@@ -23,21 +23,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // 创建新的钱包
     [self createNewWallet:@"abc123"];
-    
+
     // 从私钥导入钱包
     [self createWithPrivateKey:TEST_PRIVATE_KEY];
-    
+
     // 从Keystore导入钱包
     [self createWithKeystore:TEST_KEYSTORE pwd:TEST_KEYSTORE_PWD];
-    
+
     // 普通交易签名打包
     [self normalTransactionTest];
-    
+
     // NRC20交易签名打包
     [self nrc20TransactionTest];
+    
+//    [self testSign];
+    
 }
 
 - (void)createNewWallet:(NSString *)pwd {
@@ -52,6 +55,7 @@
 - (void)createWithPrivateKey:(NSString *)privateKey {
     NSLog(@"=== createWithPrivateKey =================================================================================");
     
+    // 通过 私钥 导入钱包，返回值需要判空。
     NebAccount *account = [[NebAccount alloc] initWithPrivateKey:privateKey];
     if (account) {
         NSLog(@"privateKey: %@", account.privateKey);
@@ -66,6 +70,7 @@
 - (void)createWithKeystore:(NSString *)keystore pwd:(NSString *)pwd {
     NSLog(@"=== createWithKeystore =================================================================================");
     
+    // 通过 keystore 导入钱包，需要处理异常。
     NebAccount *account = nil;
     @try {
         account = [[NebAccount alloc] initWithKeystore:keystore pwd:pwd];
@@ -76,6 +81,7 @@
     if (account) {
         NSLog(@"privateKey: %@", account.privateKey);
         NSLog(@"address: %@", account.address);
+        // createNewKeystoreWithPwd 生成全新的Keystore, 修改密码可以用此操作完成。
         NSString *newKeyStore = [account createNewKeystoreWithPwd:@"abc123"];
         NSLog(@"new keystore: %@", newKeyStore);
     }
@@ -85,7 +91,7 @@
     NSLog(@"=== normalTransactionTest =================================================================================");
     
     NebAccount *account = [[NebAccount alloc] initWithPrivateKey:TEST_PRIVATE_KEY];
-
+    
     NebTransaction *tx = [NebTransaction new];
     tx.chainId = CHAIN_ID_TEST_NET; // 使用测试网
     tx.from = account.address;
@@ -95,13 +101,13 @@
     tx.nonce = 1;               // 可以通过 rpc接口 查询(查询结果值+1). wiki: https://github.com/nebulasio/wiki/blob/master/rpc.md#getaccountstate
     tx.gasLimit = @"2000000";   // 可以通过 rpc预估接口预估最小值. wiki: https://github.com/nebulasio/wiki/blob/master/rpc.md#estimategas
     tx.gasPrice = @"1000000";   // 可以通过 rpc接口 查询当前链上gasPrice参考值. wiki: https://github.com/nebulasio/wiki/blob/master/rpc.md#getgasprice
-
+    
     NSString *rawTransaction = [account signTransaction:tx];
     NSLog(@"rawTransaction: %@", rawTransaction);
     // 通过 rpc 接口发送 rawTransaction 广播交易. wiki: https://github.com/nebulasio/wiki/blob/master/rpc.md#sendrawtransaction
 }
 
-- (void)nrc20TransactionTest {
+- (NSString *)nrc20TransactionTest {
     NSLog(@"=== nrc20TransactionTest =================================================================================");
     
     NebAccount *account = [[NebAccount alloc] initWithPrivateKey:TEST_PRIVATE_KEY];
@@ -125,7 +131,27 @@
     NSString *rawTransaction = [account signTransaction:tx];
     NSLog(@"rawTransaction: %@", rawTransaction);
     // 通过 rpc 接口发送 rawTransaction 广播交易. wiki: https://github.com/nebulasio/wiki/blob/master/rpc.md#sendrawtransaction
+    return rawTransaction;
 }
+
+
+//- (void)testSign {
+//    for (int i = 0; i < 100; ++i) {
+//        [self send:[self nrc20TransactionTest]];
+//    }
+//}
+//
+//- (void)send:(NSString *)rawTransaction {
+//    NSURL *url = [NSURL URLWithString:@"http://18.188.27.35:8685/v1/user/rawtransaction"];
+//    NSMutableURLRequest *resuest = [NSMutableURLRequest requestWithURL:url];
+//    [resuest setHTTPMethod:@"post"];
+//    NSData *tempData = [[NSString stringWithFormat:@"{\"data\":\"%@\"}", rawTransaction] dataUsingEncoding:NSUTF8StringEncoding];
+//    [resuest setHTTPBody:tempData];
+//    NSURLResponse *response = nil;
+//    NSError *error;
+//    NSData *data = [NSURLConnection sendSynchronousRequest:resuest returningResponse:&response error:&error];
+//    NSLog(@"====tx: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+//}
 
 
 @end
