@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202CFDDB2188071D005E5E29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFDDA2188071D005E5E29 /* Security.framework */; };
+		202CFE342188091E005E5E29 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDE22188091E005E5E29 /* ripemd160.h */; };
+		202CFE352188091E005E5E29 /* ripemd160.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDE32188091E005E5E29 /* ripemd160.mm */; };
+		202CFE362188091E005E5E29 /* base58.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDE42188091E005E5E29 /* base58.mm */; };
+		202CFE372188091E005E5E29 /* sha3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDE52188091E005E5E29 /* sha3.mm */; };
+		202CFE382188091E005E5E29 /* base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDE62188091E005E5E29 /* base58.h */; };
+		202CFE392188091E005E5E29 /* sha3.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDE72188091E005E5E29 /* sha3.h */; };
+		202CFE3A2188091E005E5E29 /* mini-gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDE82188091E005E5E29 /* mini-gmp.h */; };
+		202CFE3C2188091E005E5E29 /* crypto_scrypt-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDEB2188091E005E5E29 /* crypto_scrypt-hash.c */; };
+		202CFE3D2188091E005E5E29 /* slowequals.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDEC2188091E005E5E29 /* slowequals.c */; };
+		202CFE3E2188091E005E5E29 /* b64.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDED2188091E005E5E29 /* b64.h */; };
+		202CFE3F2188091E005E5E29 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDEE2188091E005E5E29 /* sha256.h */; };
+		202CFE402188091E005E5E29 /* crypto-scrypt-saltgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDEF2188091E005E5E29 /* crypto-scrypt-saltgen.c */; };
+		202CFE412188091E005E5E29 /* crypto_scrypt-hexconvert.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF02188091E005E5E29 /* crypto_scrypt-hexconvert.c */; };
+		202CFE422188091E005E5E29 /* crypto-mcf.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF12188091E005E5E29 /* crypto-mcf.c */; };
+		202CFE432188091E005E5E29 /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDF22188091E005E5E29 /* sysendian.h */; };
+		202CFE442188091E005E5E29 /* libscrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDF32188091E005E5E29 /* libscrypt.h */; };
+		202CFE452188091E005E5E29 /* crypto_scrypt-check.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF42188091E005E5E29 /* crypto_scrypt-check.c */; };
+		202CFE462188091E005E5E29 /* slowequals.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDF52188091E005E5E29 /* slowequals.h */; };
+		202CFE472188091E005E5E29 /* b64.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF62188091E005E5E29 /* b64.c */; };
+		202CFE482188091E005E5E29 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF72188091E005E5E29 /* sha256.c */; };
+		202CFE492188091E005E5E29 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFDF82188091E005E5E29 /* crypto_scrypt-nosse.c */; };
+		202CFE4A2188091E005E5E29 /* crypto_scrypt-hexconvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFDF92188091E005E5E29 /* crypto_scrypt-hexconvert.h */; };
+		202CFE532188091E005E5E29 /* mini-gmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE032188091E005E5E29 /* mini-gmp.c */; };
+		202CFE562188091E005E5E29 /* Sha3Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE082188091E005E5E29 /* Sha3Helper.mm */; };
+		202CFE572188091E005E5E29 /* JsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE092188091E005E5E29 /* JsonUtil.m */; };
+		202CFE582188091E005E5E29 /* ArrayType.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE0A2188091E005E5E29 /* ArrayType.h */; };
+		202CFE592188091E005E5E29 /* NSString+Codes.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE0C2188091E005E5E29 /* NSString+Codes.h */; };
+		202CFE5A2188091E005E5E29 /* NSData+Codes.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE0D2188091E005E5E29 /* NSData+Codes.m */; };
+		202CFE5B2188091E005E5E29 /* NSString+Number.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE0E2188091E005E5E29 /* NSString+Number.h */; };
+		202CFE5C2188091E005E5E29 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE0F2188091E005E5E29 /* NSString+Ext.m */; };
+		202CFE5D2188091E005E5E29 /* NSData+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE102188091E005E5E29 /* NSData+Security.m */; };
+		202CFE5E2188091E005E5E29 /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE112188091E005E5E29 /* NSString+Security.m */; };
+		202CFE5F2188091E005E5E29 /* NSString+Number.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE122188091E005E5E29 /* NSString+Number.mm */; };
+		202CFE602188091E005E5E29 /* NSString+Codes.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE132188091E005E5E29 /* NSString+Codes.m */; };
+		202CFE612188091E005E5E29 /* NSData+Codes.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE142188091E005E5E29 /* NSData+Codes.h */; };
+		202CFE622188091E005E5E29 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE152188091E005E5E29 /* Util.h */; };
+		202CFE632188091E005E5E29 /* NSString+Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE162188091E005E5E29 /* NSString+Ext.h */; };
+		202CFE642188091E005E5E29 /* NSString+Security.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE172188091E005E5E29 /* NSString+Security.h */; };
+		202CFE652188091E005E5E29 /* NSData+Security.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE182188091E005E5E29 /* NSData+Security.h */; };
+		202CFE662188091E005E5E29 /* Base58Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE192188091E005E5E29 /* Base58Helper.mm */; };
+		202CFE672188091E005E5E29 /* RMD160Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE1A2188091E005E5E29 /* RMD160Helper.mm */; };
+		202CFE682188091E005E5E29 /* Secp256k1Signature.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE1D2188091E005E5E29 /* Secp256k1Signature.h */; };
+		202CFE692188091E005E5E29 /* Secp256Key.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE1E2188091E005E5E29 /* Secp256Key.h */; };
+		202CFE6A2188091E005E5E29 /* Secp256Key.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE1F2188091E005E5E29 /* Secp256Key.mm */; };
+		202CFE6B2188091E005E5E29 /* Secp256k1Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE202188091E005E5E29 /* Secp256k1Signature.m */; };
+		202CFE6C2188091E005E5E29 /* Secp256k1Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE212188091E005E5E29 /* Secp256k1Helper.h */; };
+		202CFE6D2188091E005E5E29 /* Secp256k1Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE222188091E005E5E29 /* Secp256k1Helper.mm */; };
+		202CFE6E2188091E005E5E29 /* Sha3Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE232188091E005E5E29 /* Sha3Helper.h */; };
+		202CFE6F2188091E005E5E29 /* BinaryData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE252188091E005E5E29 /* BinaryData.mm */; };
+		202CFE702188091E005E5E29 /* BinaryData.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE262188091E005E5E29 /* BinaryData.h */; };
+		202CFE712188091E005E5E29 /* Base58Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE272188091E005E5E29 /* Base58Helper.h */; };
+		202CFE722188091E005E5E29 /* JsonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE282188091E005E5E29 /* JsonUtil.h */; };
+		202CFE732188091E005E5E29 /* KDFHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE292188091E005E5E29 /* KDFHelper.h */; };
+		202CFE742188091E005E5E29 /* ArrayType.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE2A2188091E005E5E29 /* ArrayType.m */; };
+		202CFE752188091E005E5E29 /* RMD160Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE2B2188091E005E5E29 /* RMD160Helper.h */; };
+		202CFE762188091E005E5E29 /* KDFHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE2C2188091E005E5E29 /* KDFHelper.mm */; };
+		202CFE772188091E005E5E29 /* NebKeystore.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE2E2188091E005E5E29 /* NebKeystore.h */; };
+		202CFE782188091E005E5E29 /* NebAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE2F2188091E005E5E29 /* NebAccount.m */; };
+		202CFE792188091E005E5E29 /* NebKeystore.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE302188091E005E5E29 /* NebKeystore.m */; };
+		202CFE7A2188091E005E5E29 /* NebTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE312188091E005E5E29 /* NebTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202CFE7B2188091E005E5E29 /* NebTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE322188091E005E5E29 /* NebTransaction.m */; };
+		202CFE7C2188091E005E5E29 /* NebAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE332188091E005E5E29 /* NebAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202CFE7E218809A0005E5E29 /* libsecp256k1_x86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */; };
+		202CFE8821880A6F005E5E29 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE8021880A6F005E5E29 /* secp256k1_ecdh.h */; };
+		202CFE8921880A6F005E5E29 /* libsecp256k1_x86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE8121880A6F005E5E29 /* libsecp256k1_x86_64.a */; };
+		202CFE8A21880A6F005E5E29 /* libsecp256k1_armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE8221880A6F005E5E29 /* libsecp256k1_armv7.a */; };
+		202CFE8B21880A6F005E5E29 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE8321880A6F005E5E29 /* secp256k1_recovery.h */; };
+		202CFE8C21880A6F005E5E29 /* libsecp256k1_arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE8421880A6F005E5E29 /* libsecp256k1_arm64.a */; };
+		202CFE8D21880A6F005E5E29 /* gp_secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE8521880A6F005E5E29 /* gp_secp256k1.h */; };
+		202CFE8E21880A6F005E5E29 /* gp_secp256k1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE8621880A6F005E5E29 /* gp_secp256k1.mm */; };
+		202CFE8F21880A6F005E5E29 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE8721880A6F005E5E29 /* secp256k1.h */; };
+		202CFE9921883726005E5E29 /* NebTransactionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE9721883726005E5E29 /* NebTransactionData.h */; };
+		202CFE9A21883726005E5E29 /* NebTransactionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE9821883726005E5E29 /* NebTransactionData.m */; };
+		2066F1A721871DEB0052BDA8 /* NebWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2066F1A521871DEB0052BDA8 /* NebWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D2E7C32188415200D49021 /* Transaction.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D2E7C12188415200D49021 /* Transaction.pbobjc.m */; };
+		20D2E7C42188415200D49021 /* Transaction.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D2E7C22188415200D49021 /* Transaction.pbobjc.h */; };
+		8BF7EC0E2BFE3059F41D0C92 /* Pods_NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04181F0111CEC05345DE3299 /* Pods-NebWalletCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NebWalletCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-NebWalletCore/Pods-NebWalletCore.release.xcconfig"; sourceTree = "<group>"; };
+		202CFDDA2188071D005E5E29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		202CFDDC2188074C005E5E29 /* Pods_neb_wallet_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_neb_wallet_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		202CFDE22188091E005E5E29 /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		202CFDE32188091E005E5E29 /* ripemd160.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ripemd160.mm; sourceTree = "<group>"; };
+		202CFDE42188091E005E5E29 /* base58.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = base58.mm; sourceTree = "<group>"; };
+		202CFDE52188091E005E5E29 /* sha3.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sha3.mm; sourceTree = "<group>"; };
+		202CFDE62188091E005E5E29 /* base58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base58.h; sourceTree = "<group>"; };
+		202CFDE72188091E005E5E29 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		202CFDE82188091E005E5E29 /* mini-gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mini-gmp.h"; sourceTree = "<group>"; };
+		202CFDEB2188091E005E5E29 /* crypto_scrypt-hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-hash.c"; sourceTree = "<group>"; };
+		202CFDEC2188091E005E5E29 /* slowequals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slowequals.c; sourceTree = "<group>"; };
+		202CFDED2188091E005E5E29 /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b64.h; sourceTree = "<group>"; };
+		202CFDEE2188091E005E5E29 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		202CFDEF2188091E005E5E29 /* crypto-scrypt-saltgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto-scrypt-saltgen.c"; sourceTree = "<group>"; };
+		202CFDF02188091E005E5E29 /* crypto_scrypt-hexconvert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-hexconvert.c"; sourceTree = "<group>"; };
+		202CFDF12188091E005E5E29 /* crypto-mcf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto-mcf.c"; sourceTree = "<group>"; };
+		202CFDF22188091E005E5E29 /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		202CFDF32188091E005E5E29 /* libscrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libscrypt.h; sourceTree = "<group>"; };
+		202CFDF42188091E005E5E29 /* crypto_scrypt-check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-check.c"; sourceTree = "<group>"; };
+		202CFDF52188091E005E5E29 /* slowequals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slowequals.h; sourceTree = "<group>"; };
+		202CFDF62188091E005E5E29 /* b64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = b64.c; sourceTree = "<group>"; };
+		202CFDF72188091E005E5E29 /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		202CFDF82188091E005E5E29 /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
+		202CFDF92188091E005E5E29 /* crypto_scrypt-hexconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "crypto_scrypt-hexconvert.h"; sourceTree = "<group>"; };
+		202CFE032188091E005E5E29 /* mini-gmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "mini-gmp.c"; sourceTree = "<group>"; };
+		202CFE082188091E005E5E29 /* Sha3Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sha3Helper.mm; sourceTree = "<group>"; };
+		202CFE092188091E005E5E29 /* JsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonUtil.m; sourceTree = "<group>"; };
+		202CFE0A2188091E005E5E29 /* ArrayType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayType.h; sourceTree = "<group>"; };
+		202CFE0C2188091E005E5E29 /* NSString+Codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Codes.h"; sourceTree = "<group>"; };
+		202CFE0D2188091E005E5E29 /* NSData+Codes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Codes.m"; sourceTree = "<group>"; };
+		202CFE0E2188091E005E5E29 /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
+		202CFE0F2188091E005E5E29 /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		202CFE102188091E005E5E29 /* NSData+Security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Security.m"; sourceTree = "<group>"; };
+		202CFE112188091E005E5E29 /* NSString+Security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
+		202CFE122188091E005E5E29 /* NSString+Number.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+Number.mm"; sourceTree = "<group>"; };
+		202CFE132188091E005E5E29 /* NSString+Codes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Codes.m"; sourceTree = "<group>"; };
+		202CFE142188091E005E5E29 /* NSData+Codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Codes.h"; sourceTree = "<group>"; };
+		202CFE152188091E005E5E29 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		202CFE162188091E005E5E29 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		202CFE172188091E005E5E29 /* NSString+Security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Security.h"; sourceTree = "<group>"; };
+		202CFE182188091E005E5E29 /* NSData+Security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Security.h"; sourceTree = "<group>"; };
+		202CFE192188091E005E5E29 /* Base58Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Base58Helper.mm; sourceTree = "<group>"; };
+		202CFE1A2188091E005E5E29 /* RMD160Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RMD160Helper.mm; sourceTree = "<group>"; };
+		202CFE1D2188091E005E5E29 /* Secp256k1Signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secp256k1Signature.h; sourceTree = "<group>"; };
+		202CFE1E2188091E005E5E29 /* Secp256Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secp256Key.h; sourceTree = "<group>"; };
+		202CFE1F2188091E005E5E29 /* Secp256Key.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Secp256Key.mm; sourceTree = "<group>"; };
+		202CFE202188091E005E5E29 /* Secp256k1Signature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Secp256k1Signature.m; sourceTree = "<group>"; };
+		202CFE212188091E005E5E29 /* Secp256k1Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secp256k1Helper.h; sourceTree = "<group>"; };
+		202CFE222188091E005E5E29 /* Secp256k1Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Secp256k1Helper.mm; sourceTree = "<group>"; };
+		202CFE232188091E005E5E29 /* Sha3Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha3Helper.h; sourceTree = "<group>"; };
+		202CFE252188091E005E5E29 /* BinaryData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BinaryData.mm; sourceTree = "<group>"; };
+		202CFE262188091E005E5E29 /* BinaryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryData.h; sourceTree = "<group>"; };
+		202CFE272188091E005E5E29 /* Base58Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base58Helper.h; sourceTree = "<group>"; };
+		202CFE282188091E005E5E29 /* JsonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonUtil.h; sourceTree = "<group>"; };
+		202CFE292188091E005E5E29 /* KDFHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDFHelper.h; sourceTree = "<group>"; };
+		202CFE2A2188091E005E5E29 /* ArrayType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayType.m; sourceTree = "<group>"; };
+		202CFE2B2188091E005E5E29 /* RMD160Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMD160Helper.h; sourceTree = "<group>"; };
+		202CFE2C2188091E005E5E29 /* KDFHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KDFHelper.mm; sourceTree = "<group>"; };
+		202CFE2E2188091E005E5E29 /* NebKeystore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebKeystore.h; sourceTree = "<group>"; };
+		202CFE2F2188091E005E5E29 /* NebAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebAccount.m; sourceTree = "<group>"; };
+		202CFE302188091E005E5E29 /* NebKeystore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebKeystore.m; sourceTree = "<group>"; };
+		202CFE312188091E005E5E29 /* NebTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebTransaction.h; sourceTree = "<group>"; };
+		202CFE322188091E005E5E29 /* NebTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebTransaction.m; sourceTree = "<group>"; };
+		202CFE332188091E005E5E29 /* NebAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebAccount.h; sourceTree = "<group>"; };
+		202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecp256k1_x86_64.a; path = neb_wallet_core/Libs/libsecp256k1/libsecp256k1_x86_64.a; sourceTree = "<group>"; };
+		202CFE8021880A6F005E5E29 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		202CFE8121880A6F005E5E29 /* libsecp256k1_x86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1_x86_64.a; sourceTree = "<group>"; };
+		202CFE8221880A6F005E5E29 /* libsecp256k1_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1_armv7.a; sourceTree = "<group>"; };
+		202CFE8321880A6F005E5E29 /* secp256k1_recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		202CFE8421880A6F005E5E29 /* libsecp256k1_arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1_arm64.a; sourceTree = "<group>"; };
+		202CFE8521880A6F005E5E29 /* gp_secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gp_secp256k1.h; sourceTree = "<group>"; };
+		202CFE8621880A6F005E5E29 /* gp_secp256k1.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = gp_secp256k1.mm; sourceTree = "<group>"; };
+		202CFE8721880A6F005E5E29 /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		202CFE9721883726005E5E29 /* NebTransactionData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NebTransactionData.h; sourceTree = "<group>"; };
+		202CFE9821883726005E5E29 /* NebTransactionData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NebTransactionData.m; sourceTree = "<group>"; };
+		2066F1A221871DEB0052BDA8 /* NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2066F1A521871DEB0052BDA8 /* NebWalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NebWalletCore.h; sourceTree = "<group>"; };
+		2066F1A621871DEB0052BDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D2E7C12188415200D49021 /* Transaction.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.pbobjc.m; sourceTree = "<group>"; };
+		20D2E7C22188415200D49021 /* Transaction.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.pbobjc.h; sourceTree = "<group>"; };
+		8C0577046399CA86A3864B76 /* Pods-neb_wallet_core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neb_wallet_core.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neb_wallet_core/Pods-neb_wallet_core.debug.xcconfig"; sourceTree = "<group>"; };
+		9336B7E196A66056C7479C1F /* Pods_neb_wallet_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neb_wallet_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		956C3798A911855C98188CAB /* Pods-NebWalletCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NebWalletCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NebWalletCore/Pods-NebWalletCore.debug.xcconfig"; sourceTree = "<group>"; };
+		C0571553C96031DA986BFBF9 /* Pods-neb_wallet_core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neb_wallet_core.release.xcconfig"; path = "Pods/Target Support Files/Pods-neb_wallet_core/Pods-neb_wallet_core.release.xcconfig"; sourceTree = "<group>"; };
+		D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2066F19F21871DEB0052BDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202CFE7E218809A0005E5E29 /* libsecp256k1_x86_64.a in Frameworks */,
+				202CFE8921880A6F005E5E29 /* libsecp256k1_x86_64.a in Frameworks */,
+				202CFE8C21880A6F005E5E29 /* libsecp256k1_arm64.a in Frameworks */,
+				202CFE8A21880A6F005E5E29 /* libsecp256k1_armv7.a in Frameworks */,
+				202CFDDB2188071D005E5E29 /* Security.framework in Frameworks */,
+				8BF7EC0E2BFE3059F41D0C92 /* Pods_NebWalletCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		202CFDE12188091E005E5E29 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				202CFDE72188091E005E5E29 /* sha3.h */,
+				202CFDE52188091E005E5E29 /* sha3.mm */,
+				202CFDE82188091E005E5E29 /* mini-gmp.h */,
+				202CFE032188091E005E5E29 /* mini-gmp.c */,
+				202CFDE62188091E005E5E29 /* base58.h */,
+				202CFDE42188091E005E5E29 /* base58.mm */,
+				202CFDE22188091E005E5E29 /* ripemd160.h */,
+				202CFDE32188091E005E5E29 /* ripemd160.mm */,
+				202CFDEA2188091E005E5E29 /* libscrypt */,
+				202CFE7F21880A6F005E5E29 /* libsecp256k1 */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		202CFDEA2188091E005E5E29 /* libscrypt */ = {
+			isa = PBXGroup;
+			children = (
+				202CFDEB2188091E005E5E29 /* crypto_scrypt-hash.c */,
+				202CFDEC2188091E005E5E29 /* slowequals.c */,
+				202CFDED2188091E005E5E29 /* b64.h */,
+				202CFDEE2188091E005E5E29 /* sha256.h */,
+				202CFDEF2188091E005E5E29 /* crypto-scrypt-saltgen.c */,
+				202CFDF02188091E005E5E29 /* crypto_scrypt-hexconvert.c */,
+				202CFDF12188091E005E5E29 /* crypto-mcf.c */,
+				202CFDF22188091E005E5E29 /* sysendian.h */,
+				202CFDF32188091E005E5E29 /* libscrypt.h */,
+				202CFDF42188091E005E5E29 /* crypto_scrypt-check.c */,
+				202CFDF52188091E005E5E29 /* slowequals.h */,
+				202CFDF62188091E005E5E29 /* b64.c */,
+				202CFDF72188091E005E5E29 /* sha256.c */,
+				202CFDF82188091E005E5E29 /* crypto_scrypt-nosse.c */,
+				202CFDF92188091E005E5E29 /* crypto_scrypt-hexconvert.h */,
+			);
+			path = libscrypt;
+			sourceTree = "<group>";
+		};
+		202CFE042188091E005E5E29 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE152188091E005E5E29 /* Util.h */,
+				202CFE0B2188091E005E5E29 /* Ext */,
+				202CFE242188091E005E5E29 /* Common */,
+				202CFE1B2188091E005E5E29 /* Secp256k1 */,
+				202CFE282188091E005E5E29 /* JsonUtil.h */,
+				202CFE092188091E005E5E29 /* JsonUtil.m */,
+				202CFE0A2188091E005E5E29 /* ArrayType.h */,
+				202CFE2A2188091E005E5E29 /* ArrayType.m */,
+				202CFE272188091E005E5E29 /* Base58Helper.h */,
+				202CFE192188091E005E5E29 /* Base58Helper.mm */,
+				202CFE2B2188091E005E5E29 /* RMD160Helper.h */,
+				202CFE1A2188091E005E5E29 /* RMD160Helper.mm */,
+				202CFE232188091E005E5E29 /* Sha3Helper.h */,
+				202CFE082188091E005E5E29 /* Sha3Helper.mm */,
+				202CFE292188091E005E5E29 /* KDFHelper.h */,
+				202CFE2C2188091E005E5E29 /* KDFHelper.mm */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		202CFE0B2188091E005E5E29 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE162188091E005E5E29 /* NSString+Ext.h */,
+				202CFE0F2188091E005E5E29 /* NSString+Ext.m */,
+				202CFE0C2188091E005E5E29 /* NSString+Codes.h */,
+				202CFE132188091E005E5E29 /* NSString+Codes.m */,
+				202CFE0E2188091E005E5E29 /* NSString+Number.h */,
+				202CFE122188091E005E5E29 /* NSString+Number.mm */,
+				202CFE172188091E005E5E29 /* NSString+Security.h */,
+				202CFE112188091E005E5E29 /* NSString+Security.m */,
+				202CFE142188091E005E5E29 /* NSData+Codes.h */,
+				202CFE0D2188091E005E5E29 /* NSData+Codes.m */,
+				202CFE182188091E005E5E29 /* NSData+Security.h */,
+				202CFE102188091E005E5E29 /* NSData+Security.m */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		202CFE1B2188091E005E5E29 /* Secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE1C2188091E005E5E29 /* Model */,
+				202CFE212188091E005E5E29 /* Secp256k1Helper.h */,
+				202CFE222188091E005E5E29 /* Secp256k1Helper.mm */,
+			);
+			path = Secp256k1;
+			sourceTree = "<group>";
+		};
+		202CFE1C2188091E005E5E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE1D2188091E005E5E29 /* Secp256k1Signature.h */,
+				202CFE1E2188091E005E5E29 /* Secp256Key.h */,
+				202CFE1F2188091E005E5E29 /* Secp256Key.mm */,
+				202CFE202188091E005E5E29 /* Secp256k1Signature.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		202CFE242188091E005E5E29 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE252188091E005E5E29 /* BinaryData.mm */,
+				202CFE262188091E005E5E29 /* BinaryData.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		202CFE2D2188091E005E5E29 /* Neb */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE962188349B005E5E29 /* Account */,
+				202CFE9521883482005E5E29 /* Transaction */,
+			);
+			path = Neb;
+			sourceTree = "<group>";
+		};
+		202CFE7F21880A6F005E5E29 /* libsecp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE8721880A6F005E5E29 /* secp256k1.h */,
+				202CFE8021880A6F005E5E29 /* secp256k1_ecdh.h */,
+				202CFE8321880A6F005E5E29 /* secp256k1_recovery.h */,
+				202CFE8521880A6F005E5E29 /* gp_secp256k1.h */,
+				202CFE8621880A6F005E5E29 /* gp_secp256k1.mm */,
+				202CFE8121880A6F005E5E29 /* libsecp256k1_x86_64.a */,
+				202CFE8221880A6F005E5E29 /* libsecp256k1_armv7.a */,
+				202CFE8421880A6F005E5E29 /* libsecp256k1_arm64.a */,
+			);
+			path = libsecp256k1;
+			sourceTree = "<group>";
+		};
+		202CFE9521883482005E5E29 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				20D2E7C22188415200D49021 /* Transaction.pbobjc.h */,
+				20D2E7C12188415200D49021 /* Transaction.pbobjc.m */,
+				202CFE312188091E005E5E29 /* NebTransaction.h */,
+				202CFE322188091E005E5E29 /* NebTransaction.m */,
+				202CFE9721883726005E5E29 /* NebTransactionData.h */,
+				202CFE9821883726005E5E29 /* NebTransactionData.m */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		202CFE962188349B005E5E29 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE332188091E005E5E29 /* NebAccount.h */,
+				202CFE2F2188091E005E5E29 /* NebAccount.m */,
+				202CFE2E2188091E005E5E29 /* NebKeystore.h */,
+				202CFE302188091E005E5E29 /* NebKeystore.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2066F19821871DEB0052BDA8 = {
+			isa = PBXGroup;
+			children = (
+				2066F1A421871DEB0052BDA8 /* NebWalletCore */,
+				2066F1A321871DEB0052BDA8 /* Products */,
+				9F59D462F9EEFC3C8AE7CCF3 /* Pods */,
+				24D3472A996D6CE66FB0C8DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2066F1A321871DEB0052BDA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2066F1A221871DEB0052BDA8 /* NebWalletCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2066F1A421871DEB0052BDA8 /* NebWalletCore */ = {
+			isa = PBXGroup;
+			children = (
+				202CFDE12188091E005E5E29 /* Libs */,
+				202CFE042188091E005E5E29 /* Util */,
+				202CFE2D2188091E005E5E29 /* Neb */,
+				2066F1A521871DEB0052BDA8 /* NebWalletCore.h */,
+				2066F1A621871DEB0052BDA8 /* Info.plist */,
+			);
+			path = NebWalletCore;
+			sourceTree = "<group>";
+		};
+		24D3472A996D6CE66FB0C8DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */,
+				202CFDDC2188074C005E5E29 /* Pods_neb_wallet_core.framework */,
+				202CFDDA2188071D005E5E29 /* Security.framework */,
+				9336B7E196A66056C7479C1F /* Pods_neb_wallet_core.framework */,
+				D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F59D462F9EEFC3C8AE7CCF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C0577046399CA86A3864B76 /* Pods-neb_wallet_core.debug.xcconfig */,
+				C0571553C96031DA986BFBF9 /* Pods-neb_wallet_core.release.xcconfig */,
+				956C3798A911855C98188CAB /* Pods-NebWalletCore.debug.xcconfig */,
+				04181F0111CEC05345DE3299 /* Pods-NebWalletCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2066F19D21871DEB0052BDA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202CFE622188091E005E5E29 /* Util.h in Headers */,
+				202CFE7A2188091E005E5E29 /* NebTransaction.h in Headers */,
+				20D2E7C42188415200D49021 /* Transaction.pbobjc.h in Headers */,
+				202CFE7C2188091E005E5E29 /* NebAccount.h in Headers */,
+				202CFE9921883726005E5E29 /* NebTransactionData.h in Headers */,
+				202CFE732188091E005E5E29 /* KDFHelper.h in Headers */,
+				202CFE652188091E005E5E29 /* NSData+Security.h in Headers */,
+				202CFE582188091E005E5E29 /* ArrayType.h in Headers */,
+				202CFE3A2188091E005E5E29 /* mini-gmp.h in Headers */,
+				202CFE752188091E005E5E29 /* RMD160Helper.h in Headers */,
+				202CFE592188091E005E5E29 /* NSString+Codes.h in Headers */,
+				202CFE712188091E005E5E29 /* Base58Helper.h in Headers */,
+				202CFE432188091E005E5E29 /* sysendian.h in Headers */,
+				202CFE632188091E005E5E29 /* NSString+Ext.h in Headers */,
+				202CFE462188091E005E5E29 /* slowequals.h in Headers */,
+				202CFE682188091E005E5E29 /* Secp256k1Signature.h in Headers */,
+				202CFE382188091E005E5E29 /* base58.h in Headers */,
+				202CFE702188091E005E5E29 /* BinaryData.h in Headers */,
+				202CFE692188091E005E5E29 /* Secp256Key.h in Headers */,
+				202CFE6E2188091E005E5E29 /* Sha3Helper.h in Headers */,
+				202CFE4A2188091E005E5E29 /* crypto_scrypt-hexconvert.h in Headers */,
+				202CFE642188091E005E5E29 /* NSString+Security.h in Headers */,
+				202CFE8F21880A6F005E5E29 /* secp256k1.h in Headers */,
+				2066F1A721871DEB0052BDA8 /* NebWalletCore.h in Headers */,
+				202CFE6C2188091E005E5E29 /* Secp256k1Helper.h in Headers */,
+				202CFE772188091E005E5E29 /* NebKeystore.h in Headers */,
+				202CFE612188091E005E5E29 /* NSData+Codes.h in Headers */,
+				202CFE722188091E005E5E29 /* JsonUtil.h in Headers */,
+				202CFE442188091E005E5E29 /* libscrypt.h in Headers */,
+				202CFE8D21880A6F005E5E29 /* gp_secp256k1.h in Headers */,
+				202CFE342188091E005E5E29 /* ripemd160.h in Headers */,
+				202CFE392188091E005E5E29 /* sha3.h in Headers */,
+				202CFE3E2188091E005E5E29 /* b64.h in Headers */,
+				202CFE8821880A6F005E5E29 /* secp256k1_ecdh.h in Headers */,
+				202CFE8B21880A6F005E5E29 /* secp256k1_recovery.h in Headers */,
+				202CFE3F2188091E005E5E29 /* sha256.h in Headers */,
+				202CFE5B2188091E005E5E29 /* NSString+Number.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2066F1A121871DEB0052BDA8 /* NebWalletCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2066F1AA21871DEB0052BDA8 /* Build configuration list for PBXNativeTarget "NebWalletCore" */;
+			buildPhases = (
+				398CD2A9B8140C5FE7DD8B52 /* [CP] Check Pods Manifest.lock */,
+				2066F19D21871DEB0052BDA8 /* Headers */,
+				2066F19E21871DEB0052BDA8 /* Sources */,
+				2066F19F21871DEB0052BDA8 /* Frameworks */,
+				2066F1A021871DEB0052BDA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NebWalletCore;
+			productName = neb_wallet_core;
+			productReference = 2066F1A221871DEB0052BDA8 /* NebWalletCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2066F19921871DEB0052BDA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "郭平";
+				TargetAttributes = {
+					2066F1A121871DEB0052BDA8 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 2066F19C21871DEB0052BDA8 /* Build configuration list for PBXProject "NebWalletCore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2066F19821871DEB0052BDA8;
+			productRefGroup = 2066F1A321871DEB0052BDA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2066F1A121871DEB0052BDA8 /* NebWalletCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2066F1A021871DEB0052BDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398CD2A9B8140C5FE7DD8B52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NebWalletCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2066F19E21871DEB0052BDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202CFE532188091E005E5E29 /* mini-gmp.c in Sources */,
+				202CFE372188091E005E5E29 /* sha3.mm in Sources */,
+				202CFE422188091E005E5E29 /* crypto-mcf.c in Sources */,
+				202CFE472188091E005E5E29 /* b64.c in Sources */,
+				202CFE672188091E005E5E29 /* RMD160Helper.mm in Sources */,
+				202CFE3D2188091E005E5E29 /* slowequals.c in Sources */,
+				202CFE6A2188091E005E5E29 /* Secp256Key.mm in Sources */,
+				202CFE6D2188091E005E5E29 /* Secp256k1Helper.mm in Sources */,
+				202CFE762188091E005E5E29 /* KDFHelper.mm in Sources */,
+				202CFE352188091E005E5E29 /* ripemd160.mm in Sources */,
+				202CFE6B2188091E005E5E29 /* Secp256k1Signature.m in Sources */,
+				202CFE5E2188091E005E5E29 /* NSString+Security.m in Sources */,
+				202CFE452188091E005E5E29 /* crypto_scrypt-check.c in Sources */,
+				202CFE412188091E005E5E29 /* crypto_scrypt-hexconvert.c in Sources */,
+				202CFE9A21883726005E5E29 /* NebTransactionData.m in Sources */,
+				20D2E7C32188415200D49021 /* Transaction.pbobjc.m in Sources */,
+				202CFE362188091E005E5E29 /* base58.mm in Sources */,
+				202CFE8E21880A6F005E5E29 /* gp_secp256k1.mm in Sources */,
+				202CFE792188091E005E5E29 /* NebKeystore.m in Sources */,
+				202CFE602188091E005E5E29 /* NSString+Codes.m in Sources */,
+				202CFE782188091E005E5E29 /* NebAccount.m in Sources */,
+				202CFE492188091E005E5E29 /* crypto_scrypt-nosse.c in Sources */,
+				202CFE5F2188091E005E5E29 /* NSString+Number.mm in Sources */,
+				202CFE5A2188091E005E5E29 /* NSData+Codes.m in Sources */,
+				202CFE402188091E005E5E29 /* crypto-scrypt-saltgen.c in Sources */,
+				202CFE562188091E005E5E29 /* Sha3Helper.mm in Sources */,
+				202CFE5D2188091E005E5E29 /* NSData+Security.m in Sources */,
+				202CFE6F2188091E005E5E29 /* BinaryData.mm in Sources */,
+				202CFE482188091E005E5E29 /* sha256.c in Sources */,
+				202CFE662188091E005E5E29 /* Base58Helper.mm in Sources */,
+				202CFE7B2188091E005E5E29 /* NebTransaction.m in Sources */,
+				202CFE742188091E005E5E29 /* ArrayType.m in Sources */,
+				202CFE5C2188091E005E5E29 /* NSString+Ext.m in Sources */,
+				202CFE3C2188091E005E5E29 /* crypto_scrypt-hash.c in Sources */,
+				202CFE572188091E005E5E29 /* JsonUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2066F1A821871DEB0052BDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2066F1A921871DEB0052BDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2066F1AB21871DEB0052BDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956C3798A911855C98188CAB /* Pods-NebWalletCore.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L49468Q2VD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NebWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NebWalletCore/Libs/libsecp256k1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nebulas.neb-wallet-core";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2066F1AC21871DEB0052BDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04181F0111CEC05345DE3299 /* Pods-NebWalletCore.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L49468Q2VD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NebWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NebWalletCore/Libs/libsecp256k1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.nebulas.neb-wallet-core";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2066F19C21871DEB0052BDA8 /* Build configuration list for PBXProject "NebWalletCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2066F1A821871DEB0052BDA8 /* Debug */,
+				2066F1A921871DEB0052BDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2066F1AA21871DEB0052BDA8 /* Build configuration list for PBXNativeTarget "NebWalletCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2066F1AB21871DEB0052BDA8 /* Debug */,
+				2066F1AC21871DEB0052BDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2066F19921871DEB0052BDA8 /* Project object */;
+}
