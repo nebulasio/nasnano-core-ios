@@ -58,7 +58,7 @@
     if (self = [super init]) {
         self.tx = tx;
         self.data = [Data fromTxData:tx.data];
-        self.timestamp = (UInt64)([[NSDate date] timeIntervalSince1970] * (UInt64)1000);
+        self.timestamp = (UInt64) [[NSDate date] timeIntervalSince1970];
     }
     return self;
 }
