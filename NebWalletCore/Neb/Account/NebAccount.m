@@ -55,9 +55,12 @@
         return nil;
     }
     NSString *privateKey = [k privateKeyWithPwd:pwd];
-    if ([NSString isEmpty:privateKey] || ![Secp256k1Helper verifyPrivatekey:privateKey]) {
+    if ([NSString isEmpty:privateKey]) {
         [NSException raise:@"Password error" format:@"Password: %@", pwd];
         return nil;
+    }
+    if (privateKey.length > 64) {
+        privateKey = [privateKey substringToIndex:64];
     }
     if (self = [super init]) {
         _privateKey = privateKey;

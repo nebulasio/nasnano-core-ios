@@ -118,7 +118,7 @@
     NSData *privateKeyData =
     [NebKeystore
      cryptData:ciphertextData operation:kCCDecrypt mode:kCCModeCTR algorithm:kCCAlgorithmAES
-     padding:ccPKCS7Padding keyLength:kCCKeySizeAES128
+     padding:ccNoPadding keyLength:kCCKeySizeAES128
      iv:ivData key:keyData error:&error];
     if (error) {
         return nil;
