@@ -38,7 +38,7 @@
     } else if ([data isKindOfClass:NebDeployData.class]) {
         d.type = DATA_TYPE_DEPLOY;
     }
-    d.payload = [JsonUtil serialize:data].escapeHtml.toData;
+    d.payload = [JsonUtil serialize:data].toData;
     return d;
 }
 

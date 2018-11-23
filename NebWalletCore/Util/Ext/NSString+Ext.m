@@ -107,35 +107,6 @@
     return ms;
 }
 
-- (NSString *)escapeHtml {
-    NSMutableString *encoded = [NSMutableString stringWithString:self];
-    // @"&amp;"
-    NSRange range = [self rangeOfString:@"&"];
-    if (range.location != NSNotFound) {
-        [encoded replaceOccurrencesOfString:@"&"
-                                 withString:@"&amp;"
-                                    options:NSLiteralSearch
-                                      range:NSMakeRange(0, [encoded length])];
-    }
-    // @"&lt;"
-    range = [self rangeOfString:@"<"];
-    if (range.location != NSNotFound) {
-        [encoded replaceOccurrencesOfString:@"<"
-                                 withString:@"&lt;"
-                                    options:NSLiteralSearch
-                                      range:NSMakeRange(0, [encoded length])];
-    }
-    // @"&gt;"
-    range = [self rangeOfString:@">"];
-    if (range.location != NSNotFound) {
-        [encoded replaceOccurrencesOfString:@">"
-                                 withString:@"&gt;"
-                                    options:NSLiteralSearch
-                                      range:NSMakeRange(0, [encoded length])];
-    }
-    return encoded;
-}
-
 - (BOOL)containsString:(NSString *)string {
     return !NSEqualRanges([self rangeOfString:string], NSMakeRange(NSNotFound, 0));
 }

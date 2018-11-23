@@ -124,7 +124,7 @@
     tx.to = @"n1rR5uiy4vDUn7TPMAtJ8Y1Eo54K6EYvSJ6"; // NRC20合约地址 (示例中为 Testnet ATP 合约地址)
     tx.value = @"0"; // NRC20转账 value 为0即可
     tx.data = data;
-    tx.nonce = 1;
+    tx.nonce = 561;
     tx.gasLimit = @"2000000";
     tx.gasPrice = @"1000000";
     
