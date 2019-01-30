@@ -1,0 +1,6 @@
+framework module NebWalletCore {
+  umbrella header "NebWalletCore.h"
+
+  export *
+  module * { export * }
+}

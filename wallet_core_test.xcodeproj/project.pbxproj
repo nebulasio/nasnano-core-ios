@@ -7,26 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		202CFE922188307D005E5E29 /* NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE9021882F43005E5E29 /* NebWalletCore.framework */; };
-		202CFE932188307D005E5E29 /* NebWalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE9021882F43005E5E29 /* NebWalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		202B5AAC21FEB1AE00AFEF11 /* NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE9021882F43005E5E29 /* NebWalletCore.framework */; };
+		202B5AAD21FEB1AE00AFEF11 /* NebWalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE9021882F43005E5E29 /* NebWalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2066F1842187115B0052BDA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2066F1832187115B0052BDA8 /* AppDelegate.m */; };
 		2066F1872187115B0052BDA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2066F1862187115B0052BDA8 /* ViewController.m */; };
 		2066F18A2187115B0052BDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2066F1882187115B0052BDA8 /* Main.storyboard */; };
 		2066F18C2187115C0052BDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2066F18B2187115C0052BDA8 /* Assets.xcassets */; };
 		2066F18F2187115C0052BDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2066F18D2187115C0052BDA8 /* LaunchScreen.storyboard */; };
 		2066F1922187115C0052BDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2066F1912187115C0052BDA8 /* main.m */; };
-		206CE300218855B900485E51 /* Pods_NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206CE2FF218855B900485E51 /* Pods_NebWalletCore.framework */; };
 		91629548E908FAE4FCE1E53F /* Pods_wallet_core_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CE2F04869713A8F7C04F65 /* Pods_wallet_core_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		202CFE942188307D005E5E29 /* Embed Frameworks */ = {
+		202B5AAE21FEB1AE00AFEF11 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				202CFE932188307D005E5E29 /* NebWalletCore.framework in Embed Frameworks */,
+				202B5AAD21FEB1AE00AFEF11 /* NebWalletCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		202B5AA821FACFDF00AFEF11 /* NebWalletCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebWalletCore.framework; sourceTree = "<group>"; };
 		202CFE9021882F43005E5E29 /* NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2066F17F2187115B0052BDA8 /* wallet_core_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet_core_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2066F1822187115B0052BDA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,7 +45,6 @@
 		2066F18E2187115C0052BDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2066F1902187115C0052BDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2066F1912187115C0052BDA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2066F1B321871E840052BDA8 /* neb_wallet_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = neb_wallet_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		206CE2FF218855B900485E51 /* Pods_NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CE2F04869713A8F7C04F65 /* Pods_wallet_core_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wallet_core_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5DF0EE0C0CE7AECE0CD418 /* Pods-wallet_core_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet_core_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet_core_test/Pods-wallet_core_test.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,8 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				206CE300218855B900485E51 /* Pods_NebWalletCore.framework in Frameworks */,
-				202CFE922188307D005E5E29 /* NebWalletCore.framework in Frameworks */,
+				202B5AAC21FEB1AE00AFEF11 /* NebWalletCore.framework in Frameworks */,
 				91629548E908FAE4FCE1E53F /* Pods_wallet_core_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +67,7 @@
 		2066F1762187115B0052BDA8 = {
 			isa = PBXGroup;
 			children = (
-				2066F1B321871E840052BDA8 /* neb_wallet_core.framework */,
+				202B5AA821FACFDF00AFEF11 /* NebWalletCore.framework */,
 				2066F1812187115B0052BDA8 /* wallet_core_test */,
 				2066F1802187115B0052BDA8 /* Products */,
 				FEBED98C72378EF8D61CF923 /* Pods */,
@@ -132,7 +130,7 @@
 				2066F17C2187115B0052BDA8 /* Frameworks */,
 				2066F17D2187115B0052BDA8 /* Resources */,
 				7446A872CDD5D2824C71A54B /* [CP] Embed Pods Frameworks */,
-				202CFE942188307D005E5E29 /* Embed Frameworks */,
+				202B5AAE21FEB1AE00AFEF11 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,7 +387,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L49468Q2VD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = wallet_core_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +410,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L49468Q2VD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = wallet_core_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

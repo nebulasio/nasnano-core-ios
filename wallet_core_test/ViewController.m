@@ -13,8 +13,11 @@
 #define CHAIN_ID_TEST_NET 1001 // Testnet ChainId
 
 #define TEST_PRIVATE_KEY @"75b090e8164c08db49199d9c66320c722251197a5570d8d398fc6a50a59e8b72"
-#define TEST_KEYSTORE @"{\"version\":4,\"id\":\"da10a9bd-0d23-42c9-941d-f3ebd12faf8c\",\"address\":\"n1JUqDNm65tobuGrYm35cMWeo1ENpeph3GM\",\"crypto\":{\"ciphertext\":\"7db0844c5716e9aec117a479e738621b74362ec1b61945b636f3b4ff100ca2d6\",\"cipherparams\":{\"iv\":\"47d431ec993d6eb6af6903a578f9b561\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"691284cb7649bfbc8233335689ae487449f4b689c1edc38c8aaedfdaff312c68\",\"n\":4096,\"r\":8,\"p\":1},\"mac\":\"d2dc651cb1282d2d8edb482b439f72b5dd32d1c3d9097fbb5f0ae6c6d3d4e992\",\"machash\":\"sha3256\"}}"
-#define TEST_KEYSTORE_PWD @"111111111"
+//#define TEST_KEYSTORE @"{\"version\":4,\"id\":\"da10a9bd-0d23-42c9-941d-f3ebd12faf8c\",\"address\":\"n1JUqDNm65tobuGrYm35cMWeo1ENpeph3GM\",\"crypto\":{\"ciphertext\":\"7db0844c5716e9aec117a479e738621b74362ec1b61945b636f3b4ff100ca2d6\",\"cipherparams\":{\"iv\":\"47d431ec993d6eb6af6903a578f9b561\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"691284cb7649bfbc8233335689ae487449f4b689c1edc38c8aaedfdaff312c68\",\"n\":4096,\"r\":8,\"p\":1},\"mac\":\"d2dc651cb1282d2d8edb482b439f72b5dd32d1c3d9097fbb5f0ae6c6d3d4e992\",\"machash\":\"sha3256\"}}"
+//#define TEST_KEYSTORE_PWD @"111111111"
+
+#define TEST_KEYSTORE @"{\"address\":\"n1dWv2avSofSraWpHSt7yqH9kXQm7QhkH4p\",\"crypto\":{\"cipher\":\"aes-128-ctr\",\"cipherparams\":{\"iv\":\"a9a91919eb9a6fb56791087ab54bf1b6\"},\"ciphertext\":\"cbe0da2caa10549fa2ef19aca2d336e48597ca32f874766101cf2fda8f2ad75f\",\"kdf\":\"scrypt\",\"kdfparams\":{\"c\":0,\"dklen\":32,\"n\":4096,\"p\":1,\"r\":8,\"salt\":\"a9a91919eb9a6fb56791087ab54bf1b6881c069b153562ceb5a6e1a50fec8673\"},\"mac\":\"175b56eee3327f52116dfa52244e044d06a95c53791e0186ed12e124d8d10c2c\",\"machash\":\"sha3256\"},\"id\":\"06499603-65ca-4e7d-ab38-03083040f7cf\",\"version\":4}"
+#define TEST_KEYSTORE_PWD @"llllllll"
 
 @interface ViewController ()
 @end
@@ -82,7 +85,7 @@
         NSLog(@"privateKey: %@", account.privateKey);
         NSLog(@"address: %@", account.address);
         // createNewKeystoreWithPwd 生成全新的Keystore, 修改密码可以用此操作完成。
-        NSString *newKeyStore = [account createNewKeystoreWithPwd:@"abc123"];
+        NSString *newKeyStore = [account createNewKeystoreWithPwd:TEST_KEYSTORE_PWD];
         NSLog(@"new keystore: %@", newKeyStore);
     }
 }

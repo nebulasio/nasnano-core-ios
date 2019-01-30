@@ -70,7 +70,6 @@
 		202CFE7A2188091E005E5E29 /* NebTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE312188091E005E5E29 /* NebTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		202CFE7B2188091E005E5E29 /* NebTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 202CFE322188091E005E5E29 /* NebTransaction.m */; };
 		202CFE7C2188091E005E5E29 /* NebAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE332188091E005E5E29 /* NebAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202CFE7E218809A0005E5E29 /* libsecp256k1_x86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */; };
 		202CFE8821880A6F005E5E29 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 202CFE8021880A6F005E5E29 /* secp256k1_ecdh.h */; };
 		202CFE8921880A6F005E5E29 /* libsecp256k1_x86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE8121880A6F005E5E29 /* libsecp256k1_x86_64.a */; };
 		202CFE8A21880A6F005E5E29 /* libsecp256k1_armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CFE8221880A6F005E5E29 /* libsecp256k1_armv7.a */; };
@@ -84,13 +83,12 @@
 		2066F1A721871DEB0052BDA8 /* NebWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2066F1A521871DEB0052BDA8 /* NebWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20D2E7C32188415200D49021 /* Transaction.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D2E7C12188415200D49021 /* Transaction.pbobjc.m */; };
 		20D2E7C42188415200D49021 /* Transaction.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D2E7C22188415200D49021 /* Transaction.pbobjc.h */; };
-		8BF7EC0E2BFE3059F41D0C92 /* Pods_NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */; };
+		DD1DB4FA74E9B5F5C53B639C /* Pods_NebWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A999FA5CA0CE4ED8AB76AF /* Pods_NebWalletCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04181F0111CEC05345DE3299 /* Pods-NebWalletCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NebWalletCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-NebWalletCore/Pods-NebWalletCore.release.xcconfig"; sourceTree = "<group>"; };
 		202CFDDA2188071D005E5E29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		202CFDDC2188074C005E5E29 /* Pods_neb_wallet_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_neb_wallet_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		202CFDE22188091E005E5E29 /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
 		202CFDE32188091E005E5E29 /* ripemd160.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ripemd160.mm; sourceTree = "<group>"; };
 		202CFDE42188091E005E5E29 /* base58.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = base58.mm; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		202CFE312188091E005E5E29 /* NebTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebTransaction.h; sourceTree = "<group>"; };
 		202CFE322188091E005E5E29 /* NebTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebTransaction.m; sourceTree = "<group>"; };
 		202CFE332188091E005E5E29 /* NebAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebAccount.h; sourceTree = "<group>"; };
-		202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecp256k1_x86_64.a; path = neb_wallet_core/Libs/libsecp256k1/libsecp256k1_x86_64.a; sourceTree = "<group>"; };
 		202CFE8021880A6F005E5E29 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
 		202CFE8121880A6F005E5E29 /* libsecp256k1_x86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1_x86_64.a; sourceTree = "<group>"; };
 		202CFE8221880A6F005E5E29 /* libsecp256k1_armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsecp256k1_armv7.a; sourceTree = "<group>"; };
@@ -169,11 +166,10 @@
 		2066F1A621871DEB0052BDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20D2E7C12188415200D49021 /* Transaction.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.pbobjc.m; sourceTree = "<group>"; };
 		20D2E7C22188415200D49021 /* Transaction.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.pbobjc.h; sourceTree = "<group>"; };
+		21A999FA5CA0CE4ED8AB76AF /* Pods_NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0577046399CA86A3864B76 /* Pods-neb_wallet_core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neb_wallet_core.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neb_wallet_core/Pods-neb_wallet_core.debug.xcconfig"; sourceTree = "<group>"; };
-		9336B7E196A66056C7479C1F /* Pods_neb_wallet_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neb_wallet_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C3798A911855C98188CAB /* Pods-NebWalletCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NebWalletCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NebWalletCore/Pods-NebWalletCore.debug.xcconfig"; sourceTree = "<group>"; };
 		C0571553C96031DA986BFBF9 /* Pods-neb_wallet_core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neb_wallet_core.release.xcconfig"; path = "Pods/Target Support Files/Pods-neb_wallet_core/Pods-neb_wallet_core.release.xcconfig"; sourceTree = "<group>"; };
-		D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NebWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +177,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202CFE7E218809A0005E5E29 /* libsecp256k1_x86_64.a in Frameworks */,
 				202CFE8921880A6F005E5E29 /* libsecp256k1_x86_64.a in Frameworks */,
 				202CFE8C21880A6F005E5E29 /* libsecp256k1_arm64.a in Frameworks */,
 				202CFE8A21880A6F005E5E29 /* libsecp256k1_armv7.a in Frameworks */,
 				202CFDDB2188071D005E5E29 /* Security.framework in Frameworks */,
-				8BF7EC0E2BFE3059F41D0C92 /* Pods_NebWalletCore.framework in Frameworks */,
+				DD1DB4FA74E9B5F5C53B639C /* Pods_NebWalletCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,11 +380,8 @@
 		24D3472A996D6CE66FB0C8DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				202CFE7D218809A0005E5E29 /* libsecp256k1_x86_64.a */,
-				202CFDDC2188074C005E5E29 /* Pods_neb_wallet_core.framework */,
 				202CFDDA2188071D005E5E29 /* Security.framework */,
-				9336B7E196A66056C7479C1F /* Pods_neb_wallet_core.framework */,
-				D22E400062034BF0633F6BD3 /* Pods_NebWalletCore.framework */,
+				21A999FA5CA0CE4ED8AB76AF /* Pods_NebWalletCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -717,6 +709,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NebWalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,6 +739,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NebWalletCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

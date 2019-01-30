@@ -52,7 +52,7 @@
     kdfparams.salt = [NSData randomDataWithLen:32].toHex;
     kdfparams.dklen = 32;
     
-    crypto.kdf = @"script";
+    crypto.kdf = @"scrypt";
     kdfparams.n = 4096;
     kdfparams.r = 8;
     kdfparams.p = 1;
